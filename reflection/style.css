@@ -1,0 +1,57 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(black,black);
+	height: 100vh;
+}
+h1
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	transform: tranlate(-50%,-50%);
+	font-family: sans-serif;
+	color: wheat;
+	text-transform: uppercase;
+	font-size: 6em;
+}
+h1:before
+{
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+transform-origin: bottom;
+transform:rotateX(180deg);
+line-height: 0.865em;
+background: linear-gradient(0deg,wheat 0,transparent 100%);
+-webkit-background-clip:text;
+color: transparent;
+opacity: 0.5;
+}
+.about-text p{
+	color: wheat;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.about{
+	width: 100%;
+	padding: 30pc 0px;
+	background-color: black;
+}
+.about-text{
+	width: 700px;
+}
+.main{
+	width: 1800px;
+	max-width: 100%;
+	margin: 50auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
